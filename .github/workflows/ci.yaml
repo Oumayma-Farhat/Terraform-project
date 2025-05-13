@@ -28,3 +28,15 @@ jobs:
       - name: Push to Dockerhub
         run: |
           docker push oumeymafarhat/terraform-project:${{ env.SHORT_SHA }}
+
+      - name: Congure Git Author
+        run: |
+          git config --local user.email "farhatoumeymaa@gmail.com"
+          git config --local user.name "Oumayma Farhat"
+      - name: Update Helm Chart with new image tag
+        run: |
+          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./terraform-project-tim-printer/values.yaml
+          git add ./terraform-project-tim-printer/values.yaml
+          git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
+          git push
+      

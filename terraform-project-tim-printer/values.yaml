@@ -1,0 +1,13 @@
+image:
+  repository: oumeymafarhat/terraform-project
+  tag: 6a817e4
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 8080
+ingress:
+  enabled: false
+serviceAccount:
+  enabled: false
+autoscaling:
+  enabled: false
