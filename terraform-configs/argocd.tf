@@ -12,4 +12,6 @@ server:
     type: ClusterIP
 EOF
   ]
+
+  depends_on = [minikube_cluster.minikube_docker]
 }
