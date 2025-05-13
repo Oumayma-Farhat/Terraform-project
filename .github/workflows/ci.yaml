@@ -18,7 +18,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t oumayma-farhat/terraform-project:${{ env.SHORT_SHA }} .
+          docker build -t oumeymafarhat/terraform-project:${{ env.SHORT_SHA }} .
 
       - name: Login to Dockerhub
         run: |
@@ -26,4 +26,4 @@ jobs:
 
       - name: Push to Dockerhub
         run: |
-          docker push oumayma-farhat/terraform-project:${{ env.SHORT_SHA }}
+          docker push oumeymafarhat/terraform-project:${{ env.SHORT_SHA }}
