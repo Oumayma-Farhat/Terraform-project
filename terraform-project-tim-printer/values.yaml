@@ -1,6 +1,6 @@
 image:
   repository: oumeymafarhat/terraform-project
-  tag: c645007
+  tag: 3dc392e
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
