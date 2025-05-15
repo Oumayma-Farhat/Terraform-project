@@ -1,7 +1,5 @@
 In this project, I built a complete CI/CD pipeline for a Python web application using modern DevOps tools and practices:
 
-- Developed a Python web app with Flask.
-
 -  Provisioned a local Kubernetes environment using Minikube and Terraform.
 
 - Containerized the application by writing a custom Dockerfile.
