@@ -1,3 +1,5 @@
+# ⚙️ Automated Devops pipline with Terraform, Github Actions and GitOps 🚀
+
 In this project, I built a complete CI/CD pipeline for a Python web application using modern DevOps tools and practices:
 
 -  Provisioned a local Kubernetes environment using Minikube and Terraform.
